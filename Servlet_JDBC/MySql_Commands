@@ -1,0 +1,9 @@
+create database mysql;
+
+create table userbase(
+username varchar(20),
+password varchar(20)
+);
+
+insert into userbase values("shyam","sunder");
+insert into userbase values("biso","iitian");
