@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%! public static int i=2345;%>
 <html>
 <head>
 <meta charset="ISO-8859-1">
@@ -18,7 +19,7 @@ session.setAttribute("mobile",mobile);
 
 %>
 Selected Item : <%=mobile %> ,  cost : <%=k %><br/>
-<form action="index.jsp" method="post"><input type="submit" value="pay <%=k %>" onclick="alert('success');"></form>
+<form action="index.jsp" method="post"><input type="submit" value="pay <%=k %>" onclick="alert('Order Id : <%=i++%>\nsuccess');"></form>
 <form action="error.jsp" method="post"><input type="submit" value="discard"></form>
 
 </body>
